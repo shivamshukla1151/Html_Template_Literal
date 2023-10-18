@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: #333;
+}
+
+/* Reusable container */
+.container {
+  /* Don't forget to add a width when using the margin auto
+  trick. And if using an h1, h2 etc, may need to use text-align
+  center as the text will automatically allign to left */
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  height: 20rem;
+  background-color: pink;
+  /* text-align: center; */
+}
+/* The container itself is centered. However if I have content inside, 
+  may need to use text-align center, else will appear on left*/
+
+/* if i have another div inside the container, then I will need to wrap this inside
+  yet another div with a class of .center, set a width on this and use the margin
+  auto trick, and also add text align center if content. 
+  
+  However, if this div is a flex box, then text align center won't work on it. Instead
+  set justify content to center! */
